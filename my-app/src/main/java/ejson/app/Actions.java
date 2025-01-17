@@ -10,8 +10,8 @@ public class Actions{
     public static String generate_public_private_key() {
         int keySize = 2048;
         JSONObject keys = new JSONObject();
-        try{
 
+        try{
             KeyPairGenerator keyPairGenerator = KeyPairGenerator.getInstance("RSA");
             keyPairGenerator.initialize(keySize);
             KeyPair keyPair = keyPairGenerator.generateKeyPair();
